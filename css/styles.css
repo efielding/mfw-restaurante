@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway:300,400,700');
+
+:root{
+  --raleway: 'Raleway', sans-serif;
+  --lobster: 'Lobster', cursive, sans-serif;
+}
+
+body{
+  background: pink;
+  position: relative;
+}
+
+#idhome{
+  top: 0;
+  width: 100%;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+}
+
+.logo{
+  display: inline-block;
+}
+
+.carousel{
+  width: 100%;
+  top: 0;
+}
+.cutlary-logo{
+  width: 200px;
+  height: 200px;
+}
+
+.carousel-caption {
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner > .item > img{
+  width: 100%;
+}
