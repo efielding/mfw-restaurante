@@ -1,13 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Raleway:300,400,700');
-
+/*variable*/
 :root{
   --raleway: 'Raleway', sans-serif;
   --lobster: 'Lobster', cursive, sans-serif;
 }
 
+
+/*oocss*/
+
+.font-bold{
+  font-weight: bolder;
+}
+
 body{
-  background: pink;
+  background: #fafafa;
   position: relative;
+}
+
+.row{
+  height: 900px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #idhome{
@@ -28,7 +43,7 @@ header{
 
 .carousel{
   width: 100%;
-  top: 0;
+  margin-top: -20px;
 }
 .cutlary-logo{
   width: 200px;
@@ -41,8 +56,88 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
+.carousel-caption > .btn{
+  background-color: #f8512f;
+  border: none;
+}
 .carousel-inner > .item > img{
   width: 100%;
+  height: 853px;
+}
+
+/* story */
+
+.story{
+  margin-top: 150px;
+  width: 100%;
+}
+
+.line::before{
+  content: '';
+  display: block;
+  background: #000;
+  height: 4px;
+  border-radius: 2px;
+  margin-bottom: 50px;
+}
+
+.slogan{
+  height: 100%;
+  flex-direction: column;
+}
+.s-header{
+  color: #f7472a;
+  font-family: var(--lobster);
+  font-weight: 600;
+  font-size: 80px;
+  text-shadow: 3px 3px #bbb;
+}
+
+.s-text{
+  font-size: 26px;
+  }
+
+.year{
+  color: #7f7f7f;
+  position: absolute;
+  margin: 0;
+  opacity: 0.4;
+  font-family: var(--lobster);
+  font-size: 174px;
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*review*/
+.veggies{
+  width: 100%;
+  height: 853px;
+}
+
+.review-info{
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+  z-index: 3;
+  background-color: #000;
+  opacity: 0.4;
+}
+/*menu*/
+.black{
+  margin: opx;
+  width: 100%;
+  flex-basis: auto;
+}
+
+/*contact*/
+#contact{
+  background-color: #f8512f;
 }

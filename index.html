@@ -43,19 +43,19 @@
 			      </div>
 			    </div>
 			    <div class="item">
-			      <img src="img/restaurant-2.jpg" alt="dim restaurant">
+			      <img src="img/restaurant-2.jpg" alt="dim restaurant" >
 			      <div class="carousel-caption">
-			        <h2></h2>
-							<p></p>
-							<button type="button" name="button"></button>
+			        <h2>Header</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quas laborum numquam porro, perferendis harum.</p>
+							<button class="btn btn-orange" type="button" name="button">learn more here</button>
 			      </div>
 			    </div>
 					<div class="item">
 			      <img src="img/farm-2.jpg" alt="farm landscape">
 			      <div class="carousel-caption">
-							<h2></h2>
-							<p></p>
-							<button type="button" name="button"></button>
+							<h2>Header</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt vel perferendis, minima facilis placeat dolore.</p>
+							<button class="btn btn-orange" type="button" name="button">Learn more here</button>
 			      </div>
 			    </div>
 			  </div>
@@ -73,12 +73,36 @@
 
 		</div> <!--home end-->
 		<div id="story" class="row"><!--story start-->
-
+			<div class=" story col-md-10 col-md-offset-1 line">
+				<div class="slogan col-md-6">
+					<h2 class="s-header">Our Story</h2>
+					<p class="font-bold s-text">One man. One dream.</p>
+				</div>
+				<div class=" info col-md-4 .col-md-offset-2">
+						<p class="year">1989</p>
+						<div class="s-info">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde possimus incidunt dolorem qui veritatis error saepe voluptatibus, porro sapiente animi harum mollitia nulla, inventore recusandae ut culpa. Delectus, cumque iure!</p>
+						<p>Nostrum labore, deserunt quasi sed. Aspernatur cum repudiandae molestiae quia, consequuntur quas numquam repellat dolorum perspiciatis autem, dignissimos dolores rem consectetur ab inventore obcaecati reprehenderit expedita sapiente tempora modi culpa.</p>
+						<p>Illo, ab unde labore officiis asperiores atque alias reprehenderit eligendi fuga explicabo laborum dolorem, suscipit reiciendis odio quod veritatis pariatur facilis magnam cupiditate esse voluptatem at possimus sed. Iste, officiis.</p>
+						<p>Excepturi minima accusamus at tempore, atque sequi, praesentium earum dicta quam vitae consequuntur molestias. Error, ratione, soluta! Impedit omnis eaque, non hic incidunt quibusdam quidem quam excepturi, magnam possimus itaque.</p>
+					</div>
+				</div>
+			</div>
 		</div><!--story end-->
 		<div id="review"class="row"><!--review start-->
-
+			<div class="review-info">
+				<h2>The Fresno Bee</h2>
+				<p>"The freshest and best ingredients come together to make some of the best food i have ever ate. You can really taste the Central Valley in ever bite."</p>
+			</div>
+			<div class="jumbotron-review">
+				<img class="veggies img-responsive"src="img/food_review.jpg" alt="brightly colored fruits and veggies">
+			</div>
 		</div><!--review end-->
 		<div id="menu"class="row"><!--menu start look up bootstrap toggle tags-->
+			<div class="#">
+				<img class="img-responsive black" src="img/black_linen.png" alt="black background">
+			</div>
+			<h2>Menu</h2>
 
 		</div><!--menu end-->
 		<div id="contact"class="row"><!--contact start-->
@@ -104,7 +128,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-		$('body').scrollspy({ target: '#navbar-scroll' })
+	$(document).ready(function() {
+	      $('body').scrollspy({target: "#navbar-scroll", offset: 50});
+	      $(".navbar a").on('click', function(event) {
+	        if (this.hash !== "") {
+	          event.preventDefault();
+	          const hash = this.hash;
+	          $('html, body').animate({
+	            scrollTop: $(hash).offset().top
+	          }, 800, function(){
+	            window.location.hash = hash;
+	          });
+	        }
+	      });
+	    });
 	</script>
 </body>
 </html>
