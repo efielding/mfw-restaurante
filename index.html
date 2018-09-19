@@ -13,122 +13,321 @@
 	<container class="container-fluid">
 		<div id="home" class="row"> <!--home start-->
 			<header>
-				<div class="logo">
-					<img src="img/name-01.png" alt="Restaurante logo">
-				</div>
-				<nav id="navbar-scroll" class="navbar pull-right" role="tablist">
-					<ul class="nav nav-pills">
-						<li role="presentation" class="active"><a href="#home">Home</a></li>
-						<li role="presentation"><a href="#story">Our Story</a></li>
-						<li role="presentation"><a href="#review">Review</a></li>
-						<li role="presentation"><a href="#menu">Menu</a></li>
-						<li role="presentation"><a href="#contact">Contact</a></li>
-					</ul>
+				<nav id="navbar-scroll" class="navbar navbar-inverse navbar-fixed-top">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="fa fa-bars" aria-hidden="true"></span>
+							</button>
+							<div class="navbar-brand">
+								<img src="img/name-01.png" alt="Restaurante Logo">
+							</div>
+						</div>
+
+						<div class="collapse navbar-collapse" id="navbar-collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#home">Home</a></li>
+								<li><a href="#story">Our Story</a></li>
+								<li><a href="#review">Review</a></li>
+								<li><a href="#menu">Menu</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
 				</nav>
-		</header>
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			  </ol>
+			</header>
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
 
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner" role="listbox">
-			    <div class="item active">
-			      <img class="img-responsive" src="img/wood-2.jpg" alt="wood background">
-			      <div class="carousel-caption">
-			        <img class="cutlary-logo" src="img/logo-01.png" alt="cutlary logo">
-			      </div>
-			    </div>
-			    <div class="item">
-			      <img src="img/restaurant-2.jpg" alt="dim restaurant" >
-			      <div class="carousel-caption">
-			        <h2>Header</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quas laborum numquam porro, perferendis harum.</p>
-							<button class="btn btn-orange" type="button" name="button">learn more here</button>
-			      </div>
-			    </div>
-					<div class="item">
-			      <img src="img/farm-2.jpg" alt="farm landscape">
-			      <div class="carousel-caption">
-							<h2>Header</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt vel perferendis, minima facilis placeat dolore.</p>
-							<button class="btn btn-orange" type="button" name="button">Learn more here</button>
-			      </div>
-			    </div>
-			  </div>
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				      <img class="img-responsive" src="img/wood-2.jpg" alt="wood background">
+				      <div class="carousel-caption">
+				        <img class="cutlary-logo" src="img/logo-01.png" alt="cutlary logo">
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="img/restaurant-2.jpg" alt="dim restaurant" >
+				      <div class="carousel-caption">
+				        <h2>Header</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quas laborum numquam porro, perferendis harum.</p>
+								<button class="btn btn-orange" type="button" name="button">learn more here</button>
+				      </div>
+				    </div>
+						<div class="item">
+				      <img src="img/farm-2.jpg" alt="farm landscape">
+				      <div class="carousel-caption">
+								<h2>Header</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt vel perferendis, minima facilis placeat dolore.</p>
+								<button class="btn btn-orange" type="button" name="button">Learn more here</button>
+				      </div>
+				    </div>
+				  </div>
 
-			  <!-- Controls -->
-			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
-			</div>
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+					<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				    <span class="carousel-control-prev-icon"></span>
+				  </a>
+				  <a class="carousel-control-next" href="#demo" data-slide="next">
+				    <span class="carousel-control-next-icon"></span>
+				  </a>
 
-		</div> <!--home end-->
-		<div id="story" class="row"><!--story start-->
-			<div class=" story col-md-10 col-md-offset-1 line">
-				<div class="slogan col-md-6">
-					<h2 class="s-header">Our Story</h2>
-					<p class="font-bold s-text">One man. One dream.</p>
 				</div>
-				<div class=" info col-md-4 .col-md-offset-2">
-						<p class="year">1989</p>
-						<div class="s-info">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde possimus incidunt dolorem qui veritatis error saepe voluptatibus, porro sapiente animi harum mollitia nulla, inventore recusandae ut culpa. Delectus, cumque iure!</p>
-						<p>Nostrum labore, deserunt quasi sed. Aspernatur cum repudiandae molestiae quia, consequuntur quas numquam repellat dolorum perspiciatis autem, dignissimos dolores rem consectetur ab inventore obcaecati reprehenderit expedita sapiente tempora modi culpa.</p>
-						<p>Illo, ab unde labore officiis asperiores atque alias reprehenderit eligendi fuga explicabo laborum dolorem, suscipit reiciendis odio quod veritatis pariatur facilis magnam cupiditate esse voluptatem at possimus sed. Iste, officiis.</p>
-						<p>Excepturi minima accusamus at tempore, atque sequi, praesentium earum dicta quam vitae consequuntur molestias. Error, ratione, soluta! Impedit omnis eaque, non hic incidunt quibusdam quidem quam excepturi, magnam possimus itaque.</p>
+
+				</div>
+
+			</div> <!--home end-->
+			<div id="story" class="row"><!--story start-->
+				<div class=" story col-md-10 col-md-offset-1 line">
+					<div class="slogan col-md-6">
+						<h2 class="sec-header">Our Story</h2>
+						<p class="font-bold s-text">One man. One dream.</p>
+					</div>
+					<div class=" info col-md-4 .col-md-offset-2">
+							<p class="year">1989</p>
+							<div class="s-info">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde possimus incidunt dolorem qui veritatis error saepe voluptatibus, porro sapiente animi harum mollitia nulla, inventore recusandae ut culpa. Delectus, cumque iure!</p>
+							<p>Nostrum labore, deserunt quasi sed. Aspernatur cum repudiandae molestiae quia, consequuntur quas numquam repellat dolorum perspiciatis autem, dignissimos dolores rem consectetur ab inventore obcaecati reprehenderit expedita sapiente tempora modi culpa.</p>
+							<p>Illo, ab unde labore officiis asperiores atque alias reprehenderit eligendi fuga explicabo laborum dolorem, suscipit reiciendis odio quod veritatis pariatur facilis magnam cupiditate esse voluptatem at possimus sed. Iste, officiis.</p>
+							<p>Excepturi minima accusamus at tempore, atque sequi, praesentium earum dicta quam vitae consequuntur molestias. Error, ratione, soluta! Impedit omnis eaque, non hic incidunt quibusdam quidem quam excepturi, magnam possimus itaque.</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div><!--story end-->
-		<div id="review"class="row"><!--review start-->
-			<div class="review-info">
-				<h2>The Fresno Bee</h2>
-				<p>"The freshest and best ingredients come together to make some of the best food i have ever ate. You can really taste the Central Valley in ever bite."</p>
-			</div>
-			<div class="jumbotron-review">
-				<img class="veggies img-responsive"src="img/food_review.jpg" alt="brightly colored fruits and veggies">
-			</div>
-		</div><!--review end-->
-		<div id="menu"class="row"><!--menu start look up bootstrap toggle tags-->
-			<div class="#">
-				<img class="img-responsive black" src="img/black_linen.png" alt="black background">
-			</div>
-			<h2>Menu</h2>
+			</div><!--story end-->
+			<div id="review"class="row"><!--review start-->
+				<div class=" col-md-12 line"></div>
+				<div class="review-info">
+					<h2 class="sec-header">The Fresno Bee</h2>
+					<p class="review-body">"The freshest and best ingredients come together to make some of the<br> best food i have ever ate. You can really taste the Central Valley in ever<br> bite."</p>
+				</div>
+			</div><!--review end-->
+			<div id="menu"class="row"><!--menu start look up bootstrap toggle tags-->
+					<h2 class="text-uppercase sec-header menu-title">menu</h2>
+					<div class="line">
+					<div class="toggle-tag tab-container">
+												<!-- Nav tabs -->
+						  <ul class="nav nav-tabs" role="tablist">
+						    <li role="presentation" class="active"><a href="#appetizer" aria-controls="appetizer" role="tab" data-toggle="tab">Appetizer</a></li>
+						    <li role="presentation"><a href="#lunch" aria-controls="lunch" role="tab" data-toggle="tab">Lunch</a></li>
+						    <li role="presentation"><a href="#dinner" aria-controls="dinner" role="tab" data-toggle="tab">Dinner</a></li>
+						    <li role="presentation"><a href="#desserts" aria-controls="desserts" role="tab" data-toggle="tab">Desserts</a></li>
+						  </ul>
 
-		</div><!--menu end-->
-		<div id="contact"class="row"><!--contact start-->
+						  <!-- Tab panes -->
+						  <div class="tab-content ">
+						    <div role="tabpanel" class="tab-pane fade in active text-uppercase" id="appetizer">
+									<div class="col-md-12 tab-list">
+								    	<div class="well app-one">
+								    		<img  class="img-responsive app-img" src="img/dip.jpg" alt="bread and dip appetizer">
+												<h3>Appetizer 1</h3>
+												<p class="app-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam id animi, ab repudiandae et beatae!</p>
+								    	</div>
+								    	<div class="well app-two">
+												<img class="img-responsive app-img" src="img/eggplant.jpg" alt="eggplant appetizer">
+												<h3>Appetizer 2</h3>
+												<p class="app-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam id animi, ab repudiandae et beatae!</p>
+								    	</div>
+								    	<div class="well app-three">
+												<img class="img-responsive app-img" src="img/meat.jpg" alt="tri-tip rolls appetizer">
+												<h3>Appetizer 3</h3>
+												<p class="app-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam id animi, ab repudiandae et beatae!</p>
+								    	</div>
+								    	<div class="well app-four">
+												<img class="img-responsive app-img" src="img/bruschetta.jpg" alt="bruschetta appetizer">
+												<h3>Appetizer 4</h3>
+												<p class="app-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam id animi, ab repudiandae et beatae!</p>
+								    	</div>
+									</div>
+						    </div>
+						    <div role="tabpanel" class="tab-pane fade text-uppercase" id="lunch">
+									<div class="col-md-12 tab-list">
+										<div class="well">
+											<img class="img-responsive app-img" src="img/lunch1.jpg" alt="burger">
+											<h3>Lunch 1</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum recusandae molestias, corrupti dolor minima fuga?</p>
+										</div>
+										<div class="well">
+											<img class="img-responsive app-img" src="img/lunch2.jpg" alt="grilled chicken sandwich">
+											<h3>Lunch 2</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic aliquam nisi distinctio eaque, cum temporibus!</p>
+										</div>
+										<div class="well">
+											<img class="img-responsive app-img" src="img/lunch3.jpg" alt="pulled bbq sandwhich">
+											<h3> Lunch 3</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo totam, consequuntur fuga vitae ea beatae.</p>
+										</div>
+										<div class="well">
+											<img class="img-responsive app-img" src="img/lunch4.jpg" alt="veggie sandwich">
+											<h3>Lunch 4</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla in excepturi eum culpa cupiditate mollitia.</p>
+										</div>
+									</div>
+						    </div>
+
+						    <div role="tabpanel" class="tab-pane fade text-uppercase" id="dinner">
+									<div class="col-md-12 tab-list">
+										<div class="well">
+											<img class="img-responsive app-img" src="img/dinner1.jpg" alt="ground steak dinner">
+											<h3>Dinner 1</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam molestiae, blanditiis laborum cupiditate magnam consectetur.</p>
+										</div>
+										<div class="well">
+											<img class="img-responsive app-img" src="img/dinner2.jpg" alt="filet">
+											<h3>Dinner 2</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusamus et, quam, nesciunt temporibus sequi!</p>
+										</div>
+										<div class="well">
+											<img class="img-responsive app-img" src="img/dinner3.jpg" alt="roasted chicken">
+											<h3>Dinner 3</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam rerum repellendus animi, molestias officia mollitia.</p>
+										</div>
+										<div class="well">
+											<img class="img-responsive app-img" src="img/dinner4.jpg" alt="salad">
+											<h3>Dinner 4</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod maxime cumque fugiat vitae sapiente hic.</p>
+										</div>
+								</div>
+								</div>
+
+								<div role="tabpanel" class="tab-pane fade text-uppercase" id="desserts">
+									<div class="col-md-12 tab-list">
+										<div class="well">
+											<img class="img-responsive app-img" src="img/dessert1.jpg" alt="parfait">
+											<h3>Desserts 1</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel saepe animi cupiditate nemo eum nihil!</p>
+										</div>
+										<div class="well">
+											<img class="img-responsive app-img" src="img/dessert2.jpg" alt="chocolate mousse">
+											<h3>Desserts 2</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, nisi, id voluptatem iste voluptatibus enim.</p>
+										</div>
+										<div class="well">
+											<img class="img-responsive app-img" src="img/dessert3.jpg" alt="respberry ice-cream">
+											<h3>Desserts 3</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae adipisci iure veritatis eveniet optio, quis.</p>
+										</div>
+										<div class="well">
+											<img class="img-responsive app-img" src="img/dessert4.jpg" alt="bundt cake">
+											<h3>Desserts 4</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, facere, repellat. Similique laboriosam, et beatae!</p>
+										</div>
+									</div>
+								</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+
+			</div><!--menu end-->
+			<div id="contact"class="row"><!--contact start-->
+				<div class="col-md-10 col-md-offset-1">
+					<h2 class="sec-header c-title text-uppercase">contact</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique temporibus laudantium esse commodi minima amet distinctio, ratione rem ea est!</p>
+				</div>
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-6 form">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label for="inputName" class="col-sm-2 control-label">Name</label>
+								<div class="col-sm-10">
+									<input type="Name" class="form-control" id="inputName" placeholder="Name">
+								</div>
+							</div>
+							<div class="form-group">
+							  <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+							  <div class="col-sm-10">
+							      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+							    </div>
+							  </div>
+							  <div class="form-group">
+							    <label for="inputSubject" class="col-sm-2 control-label">Subject</label>
+							    <div class="col-sm-10">
+							      <input type="subject" class="form-control" id="inputSubject" placeholder="subject">
+							    </div>
+							  </div>
+								<div class="form-group">
+							    <label for="inputMessage" class="col-sm-2 control-label">Message</label>
+							    <div class="col-sm-10">
+										<textarea id="inputMessage" rows="5" class="form-control"></textarea>
+							    </div>
+							  </div>
+							  <div class="form-group">
+							    <div class="col-sm-offset-2 col-sm-10">
+							      <div class="checkbox">
+							        <label>
+							          <input type="checkbox">I am not a robot
+							        </label>
+							      </div>
+							    </div>
+							  </div>
+							  <div class="form-group">
+							    <div class="col-sm-offset-2 col-sm-10">
+							      <button type="submit" class="btn btn-default">Send Message!</button>
+							    </div>
+							  </div>
+						</form>
+					</div>
+					<div class="col-md-5 col-md-offset-1 location">
+						<h4>Restaurante</h4>
+						<address class="address">
+							<p>123 Fulton St.<br>
+							Fresno, C.A. 93728<br>
+							P. 123-456-7890</p>
+						</address>
+						<map class="embed-responsive embed-responsive-16by9" role="application">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.6089629605067!2d-119.78802294971912!3d36.731951579140954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e26d4340503%3A0xb32dda71cf0730a0!2sBitwise+South+Stadium!5e0!3m2!1sen!2sus!4v1536890944830" width="400" height="300" class="embed-responsive-item" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</map>
+					</div>
+				</div>
 
 		</div><!--content end-->
 
+</container>
 
-
-
-	</container>
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-
-</div>
-	</section>
 
 	<!-- javascript	 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
+
+			$('a[href="#appetizer"]').click(function (e) {
+			e.preventDefault()
+			$(this).tab('show')
+			})
+
+			$('a[href="#lunch"]').click(function (e) {
+			e.preventDefault()
+			$(this).tab('show')
+			})
+
+			$('a[href="#dinner"]').click(function (e) {
+				e.preventDefault()
+				$(this).tab('show')
+			})
+
+			$('a[href="#dessert"]').click(function (e) {
+				e.preventDefault()
+				$(this).tab('show')
+			})
+
+
 	      $('body').scrollspy({target: "#navbar-scroll", offset: 50});
 	      $(".navbar a").on('click', function(event) {
 	        if (this.hash !== "") {
